@@ -12,7 +12,7 @@
         <Label x:Name="igrok1" Content="" HorizontalAlignment="Left" Margin="1114,0,0,0" VerticalAlignment="Top" Height="100" Width="230" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" Grid.RowSpan="2"/>
         <Label Content="Первый игрок" HorizontalAlignment="Left" Margin="1114,0,0,0" VerticalAlignment="Top" Height="32" Width="230" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="Второй игрок" HorizontalAlignment="Left" Margin="1360,0,0,0" VerticalAlignment="Top" Height="32" Width="230" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <WrapPanel x:Name="wrapPanel"/>
+        <Grid x:Name="gid" Margin="2,116,2,10" Width="1596" />
 
 
     </Grid>

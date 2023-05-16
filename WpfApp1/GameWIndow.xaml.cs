@@ -28,10 +28,8 @@ namespace WpfApp1
             InitializeComponent();
             igrok1.Content = Models.Information.Player1.Name;
             igrok2.Content = Models.Information.Player2.Name;
+
             Hod = "X";
-            InitializeComponent();
-            igrok1.Content = Models.Information.Player1.Name;
-            igrok2.Content = Models.Information.Player2.Name;
             buttons = new Button[Models.Information.Razmernost, Models.Information.Razmernost];
             int count = 0;
             for (int i = 0; i < Models.Information.Razmernost; i++)
@@ -42,7 +40,9 @@ namespace WpfApp1
                     buttons[i, j].Width = 1600 / Models.Information.Razmernost;
                     buttons[i, j].Height = 700 / Models.Information.Razmernost;
                     buttons[i, j].Tag = count;
-                    Grid.Children.Add(buttons[i, j]);
+                    Grid.SetRow(buttons[i, j], j);
+                    Grid.SetColumn(buttons[i, j], i);
+                    gid.Children.Add(buttons[i, j]);
                     buttons[i, j].Click += onclick;
                     count++;
                 }

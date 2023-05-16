@@ -26,7 +26,7 @@ namespace WpfApp1
                 Logika.Check(name1, name2);
                 var razmernost = Models.Razmer.razmeri.First(x => x.Value == Razmer.SelectedItem.ToString()).Key;
                 Logika.CreateInformation(name1, name2, razmernost);
-                GameWIndow gameWIndow = new GameWIndow();
+                GameWIndow gameWIndow = new();
                 gameWIndow.Show();
                 Close();
             }
