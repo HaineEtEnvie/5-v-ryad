@@ -37,5 +37,6 @@ namespace WpfApp1.View_Models
                 throw new Exception("Имя второго игрока введено неверно");
             }
         }
+
     }
 }
