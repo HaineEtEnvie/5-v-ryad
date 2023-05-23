@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace WpfApp1
 {
@@ -76,9 +77,14 @@ namespace WpfApp1
             if (isPlayer1Turn)
             {
                 button.Content = "X";
+                Views.Knopki.igrok1.Foreground = Brushes.Red;
+                Views.Knopki.igrok2.Foreground = Brushes.Black;
+
             }
             else
             {
+                Views.Knopki.igrok1.Foreground = Brushes.Black;
+                Views.Knopki.igrok2.Foreground = Brushes.Red;
                 button.Content = "O";
             }
 
