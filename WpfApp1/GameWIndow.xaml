@@ -6,4 +6,12 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
                 Title="Игровое окно" Background="#FFFBA100" Margin="-2,0,0,0" Height="800" Width="1600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        
+    <Grid x:Name="grid">
+        <Label Panel.ZIndex="1" Name="Label1" Content="5 в ряд" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,10,0,0" Height="85" Width="506" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label >
+        <Label Panel.ZIndex="1" Name="Label2" Content="Первый игрок" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1130,0,0,0" Height="32" Width="230" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
+        <Label Panel.ZIndex="1" Name="Label3" Content="Первый игрок" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1360,0,0,0" Height="32" Width="230" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
+        <Label Panel.ZIndex="1" Name="Igrok1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1130,0,0,0" Height="100" Width="230" FontSize="26" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
+        <Label Panel.ZIndex="1" Name="Igrok2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1360,0,0,0" Height="100" Width="230" FontSize="26" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
+    </Grid>
 </Window>

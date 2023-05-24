@@ -12,31 +12,7 @@ namespace WpfApp1
         public GameWIndow()
         {
             InitializeComponent();
-            // создание грида и таблицы из кнопок
-            Grid grid = new();
-            RowDefinition qwe = new(){Height = new GridLength(100)};
-            grid.RowDefinitions.Add(qwe);
-
-            Grid.SetRow(Views.Knopki.label1, 0);
-            Grid.SetColumnSpan(Views.Knopki.label1, Models.Information.Razmernost);
-            grid.Children.Add(Views.Knopki.label1);
             
-            Grid.SetRow(Views.Knopki.igrok1, 0);
-            Grid.SetColumnSpan(Views.Knopki.igrok1, Models.Information.Razmernost);
-            grid.Children.Add(Views.Knopki.igrok1);            
-            
-            Grid.SetRow(Views.Knopki.igrok2, 0);
-            Grid.SetColumnSpan(Views.Knopki.igrok2, Models.Information.Razmernost);
-            grid.Children.Add(Views.Knopki.igrok2);             
-            
-            Grid.SetRow(Views.Knopki.label2, 0);
-            Grid.SetColumnSpan(Views.Knopki.label2, Models.Information.Razmernost);
-            grid.Children.Add(Views.Knopki.label2);            
-            
-            Grid.SetRow(Views.Knopki.label3, 0);
-            Grid.SetColumnSpan(Views.Knopki.label3, Models.Information.Razmernost);
-            grid.Children.Add(Views.Knopki.label3); 
-
             for (int i = 0; i < Models.Information.Razmernost; i++)
             {
                 RowDefinition row = new(){Height = new GridLength(1, GridUnitType.Star)};
@@ -77,14 +53,14 @@ namespace WpfApp1
             if (isPlayer1Turn)
             {
                 button.Content = "X";
-                Views.Knopki.igrok1.Foreground = Brushes.Red;
-                Views.Knopki.igrok2.Foreground = Brushes.Black;
+                Igrok1.Foreground = Brushes.Red;
+                Igrok2.Foreground = Brushes.Black;
 
             }
             else
             {
-                Views.Knopki.igrok1.Foreground = Brushes.Black;
-                Views.Knopki.igrok2.Foreground = Brushes.Red;
+                Igrok1.Foreground = Brushes.Black;
+                Igrok2.Foreground = Brushes.Red;
                 button.Content = "O";
             }
 
